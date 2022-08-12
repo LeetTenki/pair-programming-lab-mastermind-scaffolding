@@ -32,6 +32,16 @@ function checkGuess(guess, solution) {
   // characters not in the right place"
   // for example, "2-1"
   //
+
+  let guessindex = 0;
+  let solutionindex = 0;
+
+  if (checkGuess(solutionindex)) return 0;
+  if (checkGuess.includes(solution)) return 0;
+  if (guess[guessindex] === solution[solutionindex]) {
+    checkGuess.push(solutionindex);
+    return 1;
+  } else return 0;
 }
 
 // https://jsdoc.app
